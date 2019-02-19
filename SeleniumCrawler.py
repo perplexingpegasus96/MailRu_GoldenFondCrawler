@@ -12,10 +12,7 @@ class SeleniumCrawler(object):
         self._website = "https://otvet.mail.ru/"
         self._databaseLocation = databaseLocation
 
-        # options = webdriver.ChromeOptions()
-        # options.binary_location = "C:/Program Files (x86)/Yandex/YandexBrowser/Application/browser.exe"
-        # chrome_driver_binary = "C:/Users/17060903/chromedriver.exe"
-        self._driver = webdriver.Edge('C:/Users/17060903/MicrosoftWebDriver.exe')
+  
 
         conn = sqlite3.connect(self._databaseLocation, timeout=10)
         cursor = conn.cursor()
