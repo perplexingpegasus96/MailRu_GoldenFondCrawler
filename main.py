@@ -4,8 +4,6 @@ from myCrawler import *
 
 if __name__ == "__main__":
     #подлкючимся к БД и создадим табличку
-    conn = sqlite3.connect(r'C:\Users\17060903\Desktop\WorkProjects\MailRuCrawler\MailRuQ&A.db',
-                           timeout=10)
 
     cursor = conn.cursor()
     cursor.execute("""
